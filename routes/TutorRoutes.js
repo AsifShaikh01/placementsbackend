@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const { authTutor } = require('../middleware/authMiddleware');
-const AnswerModel = require('../models/Answer.model');
+const {AnswerModel} = require('../models/Answer.model');
 
-const QuestionModel = require('../models/Question.model');
+const {QuestionModel} = require('../models/Question.model');
 
 // GET all unanswered questions
 router.get('/unanswered',authTutor, async (req, res) => {
