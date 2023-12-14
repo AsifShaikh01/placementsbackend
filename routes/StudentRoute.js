@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const StudentModel = require('../models/Question.model');
+const StudentModel = require('../models/Student.model');
 
 // Student registration
 router.post('/register', async (req, res) => {
