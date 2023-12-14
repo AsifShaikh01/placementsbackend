@@ -12,7 +12,7 @@ const studentSchema = mongoose.Schema({
 
 })
 
-const StudentModel = mongoose.model("student",studentSchema);
+const StudentModel = mongoose.model("students",studentSchema);
 
 module.exports={
     StudentModel

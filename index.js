@@ -1,14 +1,13 @@
 const express = require('express');
 const cors = require('cors');
-const mongoose = require("mongoose");
 const studentAuthRoutes = require('./routes/StudentRoute');
 const tutorAuthRoutes = require('./routes/TutorAuthRoutes');
 const questionRoutes = require('./routes/QuestionRoutes');
 // const { authStudent } = require('./middlewares/authMiddleware');
-// const { connection } = require('./config/db'); 
+const { connection } = require('./config/db'); 
 
 const app = express();
-const connection = mongoose.connect(process.env.MONGO_URL);
+
 
 app.use(express.json());
 app.use(cors());
